@@ -36,4 +36,45 @@ body{
     background-color: aquamarine;
 }
 
+.main #history-section{
+    margin-top: 0,5%;
+    padding: 1.5%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.main #history-section .text-values{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#section_services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_services .grids{
+    height: 400px;
+    width: 100%;
+    background-color: teal;
+    display: grid;
+    grid-gap: 5px;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+}
+
+#section_services div{
+    height: 100px;
+    width: 300px;
+    background-color: black;
+}
+
+footer{
+    height: 30vh;
+    width: 100%;
+    background-color: aqua;
+}
 /* ANIMAÇÃO */
