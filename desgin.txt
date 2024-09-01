@@ -1,0 +1,4 @@
+Fontes:
+Fontes de Tamanho Letra: px em 
+Fontes de Tamanho Pagina: hv px % em
+

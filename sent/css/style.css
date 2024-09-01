@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS GLOBAL */
+h1{font-size: 4em;}
+h2{font-size: 3em;}
+h3{font-size: 2em;}
+h4{font-size: 1.5em;}
+h5{font-size: 1.1em;}
+p{font-size: 1.1em;}
+
+/* TAGS */
+
+body{
+    height: auto;
+    background-color: blue;
+}
+
+.main{
+    height: auto;
+    width: 100%;
+
+}
+
+.main #carousel-main .carousel-item img{
+    height: 70vh;
+    width: 100%;
+}
+
+.main #carousel-main .carousel-item .caption-img{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+}
+
+/* ANIMAÇÃO */
