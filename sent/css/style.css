@@ -34,6 +34,11 @@ body{
     width: 100%;
 }
 
+#header .header_div_logo .header-logo{
+    width: 80px;
+    height: 80px;
+}
+
 #header .header_div_menu .header_ul{
     width: 300px;
     height: 8vh;
@@ -55,7 +60,8 @@ body{
 
 .main #carousel-main .carousel-item img{
     height: 70vh;
-    width: 100%;
+    width: 80%;
+
 }
 
 .main #carousel-main .carousel-item .caption-img{
@@ -91,14 +97,30 @@ body{
     display: grid;
     grid-gap: 5px;
     grid-template: repeat(2, auto) / repeat(2, auto);
-    justify-items: center;
-    align-items: center;
-
-    transition: 0.9ms linear;
 }
 
 #section_services div{
-    height: 20vh;
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+
+    text-align: center;
+    color: white;
+}
+
+#section_services .grids img{
+    width: 70%;
+    height: 40vh;
+}
+
+#section_services .grids .caption{
+    width: auto;
+    height: 20px;
+}
+
+
+#section_services {
+    height: 100vh;
     width: 80%;
     background-color: black;
 
@@ -118,7 +140,7 @@ body{
 
 #section_link a{
     width: 300px;
-    height: 70px;
+    height: auto;
     background-color: rgba(84, 255, 95, 0.885);
     color: white;
     font-size: 24px;
@@ -131,6 +153,7 @@ body{
 }
 
 #section_contact{
+    margin-top: 1%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -155,13 +178,47 @@ footer{
 
 /* ANIMAÇÃO */
 
-#section_services .grids div:hover{
-    transform: scale(1.1);
-    transition: 0.9ms ease-in-out;
-}
 
-#section_link a:hover{
-    background-color: white;
-    color: rgba(84, 255, 95, 0.841);
-    font-weight: 600;
+
+@media (max-width: 750px) {
+    body{
+        width: 750px;
+    }
+
+    .main #carousel-main .carousel-item img{
+        height: 60vh;
+        width: 750px;
+    
+    }
+
+    #section_contact{
+        width: 70%;
+        flex-direction: column;
+
+     
+    }
+
+    #section_services .grids{
+        padding: 0;
+        width: 750px;
+    }
+
+    #section_link{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 750px;
+        height: 10vh;
+
+    }
+    
+    #section_contact h5{
+        font-size: 1em;
+     
+    }
+
+    footer{
+        height: 3vh;
+        width: 750px;
+ 
+    }
 }
