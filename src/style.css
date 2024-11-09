@@ -255,6 +255,15 @@ body{
     .h1{
         font-size: 3.1em;
     }
+
+    .div-email{
+        font-size: 16px;
+    }
+
+    .span-whatsapp{
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 450px){
