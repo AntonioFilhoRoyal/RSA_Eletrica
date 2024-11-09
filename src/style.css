@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h1{font-size: 4.0em;}
+.h2{font-size: 3.5em;}
+.h3{font-size: 3.0em;}
+.h4{font-size: 2.5em;}
+.h5{font-size: 1.5em;}
+
+body{
+    background-color: rgb(0, 9, 48);
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+.main-body{
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    background-color: rgb(0, 37, 51);
+}
+
+.div-header{
+    padding-bottom: 0.5%;
+    width: 100%;
+    height: auto;
+    background-color: black;
+
+    display: flex;
+    flex-direction:column;
+    justify-self: center;
+    align-items: center;
+}
+
+.header-home{
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-home img{
+    margin-right: 1.5%;
+    width: 70px;
+    height: auto;
+}
+
+.header-info{
+    margin-top: 1%;
+    width: 50%;
+    height: 3.5vh;
+    background-color: rgb(2, 27, 27);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-list-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-list-info .item-list{
+    list-style: none;
+    transition: 0.3s ease-in-out;
+}
+
+.header-list-info .item-list:hover{
+    color: rgb(106, 205, 241);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.div-main{
+    margin-bottom: 0.5%;
+    width: 100%;
+    height: auto;
+}
+
+.div-main .main-intro{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-span-about{
+    padding: 0.7%;
+    width: 80%;
+    height: auto;
+    color: rgb(180, 242, 253);
+    background-color: rgba(2, 27, 27, 0.548);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.div-main .main-grid-images-services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-main .main-grid-images-services .grids-images{
+    padding: 1.2%;
+    width: 70%;
+    height: auto;
+    background-color: black;
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+    grid-auto-flow: row;
+ 
+}
+
+.main-grid-images-services .grids-images .image-service{
+    margin: 0.7%;
+    width: 80%;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(0, 15, 63);
+    border-radius: 10px;
+}
+
+.main-grid-images-services .grids-images .image-service p{
+    background-color: rgba(255, 255, 255, 0.555);
+    color: rgb(179, 12, 0);
+    text-align: center;
+    font-weight: 800;
+}
+
+.grids-images .img-service1{
+    background-image: url('../imagens/img1.jpg');
+}
+
+.grids-images .img-service2{
+    background-image: url('../imagens/img2.jpg');
+}
+
+.grids-images .img-service3{
+    background-image: url('../imagens/img6.jpg');
+
+}
+
+.grids-images .img-service4{
+    background-image: url('../imagens/infra\ estrutura.jpeg');
+}
+
+.main-grid-images-services .grids-images .image-service:hover{
+    transform: scale(0.98);
+}
+
+.paragraphy{
+    width: 70%;
+    height: auto;
+    text-align: center;
+
+}
+
+.div-main .div-main-body{
+    margin-top: 1.5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.div-main .div-main-body p{
+    font-size: 18px;
+}
+
+.div-ceo{
+    margin-top: 2%;
+}
+
+.div-whatsapp{
+    text-align: center;
+    font-size: 28px;
+}
+
+.div-whatsapp span{
+    font-size: 40px;
+}
+
+.div-footer{
+    margin-top: 6%;
+    margin-bottom: 0.8%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+@media (max-width: 1100px){
+    .div-span-about{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 700px){
+    .h5{font-size: 1.2em;}
+
+    .header-info{width: 80%;}
+
+    .main-grid-images-services .grids-images .image-service{
+        width: 100%;
+        height: 20vh;
+   }
+
+   .div-main .div-main-body{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .paragraphy{
+        width: 90%;
+    }
+
+    .div-main .div-main-body p{
+        margin: 0.5%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .div-span-about{
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px){
+    .h1{
+        font-size: 3.1em;
+    }
+}
+
+@media (max-width: 450px){
+    .h1{
+        font-size: 2em;
+    }
+
+    .header-home img{
+        margin-right: 5%;
+        width: 50px;
+        height: auto;
+    }
+
+}
